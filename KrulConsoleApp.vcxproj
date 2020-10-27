@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{12236ee4-4212-49d2-bf32-5bc61dd15879}</ProjectGuid>
+    <RootNamespace>KrulConsoleApp</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="HTTPGetter.cpp" />
+    <ClCompile Include="Interpreters\GotoTests\Goto.cpp" />
+    <ClCompile Include="Interpreters\GotoTests\GotoIfEqual.cpp" />
+    <ClCompile Include="Interpreters\GotoTests\GotoIfGreater.cpp" />
+    <ClCompile Include="Interpreters\GotoTests\GotoIfGreaterOrEqual.cpp" />
+    <ClCompile Include="Interpreters\GotoTests\GotoIfLessOrEqual.cpp" />
+    <ClCompile Include="Interpreters\GotoTests\GotoIfNotEqual.cpp" />
+    <ClCompile Include="Interpreters\GotoTests\GotoIfLess.cpp" />
+    <ClCompile Include="Interpreters\Interpreter.cpp" />
+    <ClCompile Include="Interpreters\NumberInterpreters\Absolute.cpp" />
+    <ClCompile Include="Interpreters\NumberInterpreters\Addition.cpp" />
+    <ClCompile Include="Interpreters\NumberInterpreters\Decrement.cpp" />
+    <ClCompile Include="Interpreters\NumberInterpreters\Division.cpp" />
+    <ClCompile Include="Interpreters\NumberInterpreters\Increment.cpp" />
+    <ClCompile Include="Interpreters\NumberInterpreters\Modulo.cpp" />
+    <ClCompile Include="Interpreters\NumberInterpreters\Multiplication.cpp" />
+    <ClCompile Include="Interpreters\NumberInterpreters\Negate.cpp" />
+    <ClCompile Include="Interpreters\NumberInterpreters\Subtraction.cpp" />
+    <ClCompile Include="Interpreters\TextInterpreters\Concatenation.cpp" />
+    <ClCompile Include="Interpreters\TextInterpreters\Duplicate.cpp" />
+    <ClCompile Include="Interpreters\TextInterpreters\Indexing.cpp" />
+    <ClCompile Include="Interpreters\TextInterpreters\Length.cpp" />
+    <ClCompile Include="Interpreters\TextInterpreters\Newline.cpp" />
+    <ClCompile Include="Interpreters\TextInterpreters\Reverse.cpp" />
+    <ClCompile Include="Interpreters\TextInterpreters\Rot13.cpp" />
+    <ClCompile Include="Interpreters\TextInterpreters\Substring.cpp" />
+    <ClCompile Include="KrulConsoleApp.cpp" />
+    <ClCompile Include="MethodLib.cpp" />
+    <ClCompile Include="Parser.cpp" />
+    <ClCompile Include="ParserInterpreters\LabelCreation.cpp" />
+    <ClCompile Include="ParserInterpreters\LabelRetrieval.cpp" />
+    <ClCompile Include="ParserInterpreters\ParserLib.cpp" />
+    <ClCompile Include="ParserInterpreters\VariableCreation.cpp" />
+    <ClCompile Include="ParserInterpreters\VariableRetrieval.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Interpreters\GotoTests\Goto.h" />
+    <ClInclude Include="Interpreters\GotoTests\GotoIfEqual.h" />
+    <ClInclude Include="Interpreters\GotoTests\GotoIfGreater.h" />
+    <ClInclude Include="Interpreters\GotoTests\GotoIfGreaterOrEqual.h" />
+    <ClInclude Include="Interpreters\GotoTests\GotoIfLess.h" />
+    <ClInclude Include="Interpreters\GotoTests\GotoIfLessOrEqual.h" />
+    <ClInclude Include="Interpreters\GotoTests\GotoIfNotEqual.h" />
+    <ClInclude Include="Interpreters\NumberInterpreters\Absolute.h" />
+    <ClInclude Include="Interpreters\NumberInterpreters\Addition.h" />
+    <ClInclude Include="Interpreters\NumberInterpreters\Decrement.h" />
+    <ClInclude Include="Interpreters\NumberInterpreters\Division.h" />
+    <ClInclude Include="Interpreters\NumberInterpreters\Increment.h" />
+    <ClInclude Include="Interpreters\NumberInterpreters\Modulo.h" />
+    <ClInclude Include="Interpreters\NumberInterpreters\Multiplication.h" />
+    <ClInclude Include="Interpreters\NumberInterpreters\Negate.h" />
+    <ClInclude Include="Interpreters\NumberInterpreters\Subtraction.h" />
+    <ClInclude Include="Interpreters\TextInterpreters\Concatenation.h" />
+    <ClInclude Include="Interpreters\TextInterpreters\Duplicate.h" />
+    <ClInclude Include="Interpreters\TextInterpreters\Indexing.h" />
+    <ClInclude Include="Interpreters\TextInterpreters\Length.h" />
+    <ClInclude Include="Interpreters\TextInterpreters\Newline.h" />
+    <ClInclude Include="Interpreters\TextInterpreters\Reverse.h" />
+    <ClInclude Include="Interpreters\TextInterpreters\Rot13.h" />
+    <ClInclude Include="Interpreters\TextInterpreters\Substring.h" />
+    <ClInclude Include="MethodLib.h" />
+    <ClInclude Include="HTTPGetter.h" />
+    <ClInclude Include="Interpreters\Interpreter.h" />
+    <ClInclude Include="Parser.h" />
+    <ClInclude Include="ParserInterpreters\iLabelParser.h" />
+    <ClInclude Include="ParserInterpreters\iVariableParser.h" />
+    <ClInclude Include="ParserInterpreters\LabelCreation.h" />
+    <ClInclude Include="ParserInterpreters\LabelRetrieval.h" />
+    <ClInclude Include="ParserInterpreters\ParcerLib.h" />
+    <ClInclude Include="ParserInterpreters\VariableCreation.h" />
+    <ClInclude Include="ParserInterpreters\VariableRetrieval.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitignore" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
